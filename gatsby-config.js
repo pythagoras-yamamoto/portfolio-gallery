@@ -32,6 +32,21 @@ module.exports = {
       },
     },
     {
+      resolve: "@chakra-ui/gatsby-plugin",
+      options: {
+        /**
+         * @property {boolean} [resetCSS=true]
+         * if false, this plugin will not use `<CSSReset />
+         */
+        resetCSS: true,
+        /**
+         * @property {boolean} [isUsingColorMode=true]
+         * if false, this plugin will not use <ColorModeProvider />
+         */
+        isUsingColorMode: true,
+      },
+    },
+    {
       resolve: "gatsby-source-microcms",
       options: {
         apiKey: "6aea31522b0441c4b01fdc87cbd69114e39a",

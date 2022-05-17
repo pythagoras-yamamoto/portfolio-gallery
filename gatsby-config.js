@@ -31,6 +31,19 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-microcms",
+      options: {
+        apiKey: "6aea31522b0441c4b01fdc87cbd69114e39a",
+        serviceId: "portfolio-gallery",
+        apis: [
+          {
+            endpoint: "hello",
+            format: "object",
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

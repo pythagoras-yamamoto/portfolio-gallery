@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Box } from "@chakra-ui/react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -85,6 +86,9 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
+      <Box padding={10} backgroundColor="red">
+        Hello
+      </Box>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
